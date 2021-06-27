@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import { App } from './App';
 import reportWebVitals from './reportWebVitals';
-import { createServer, Model} from 'miragejs';
+import { createServer, Factory, Model } from 'miragejs';
+import faker from 'faker';
 
 createServer({
     models: {
@@ -32,7 +33,6 @@ createServer({
             ],
         })
     },
-
     routes() {
         this.namespace = 'api';
 
